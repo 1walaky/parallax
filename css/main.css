@@ -1,0 +1,90 @@
+body{
+  margin: 0;
+}
+
+h1{
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.zeroLeftMargin{
+  margin-left: 0 !important;
+}
+/* ============================================================
+  PRIMARY STRUCTURE
+============================================================ */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+/* ============================================================
+  S
+============================================================ */
+.module:last-child {
+  margin-bottom: 0;
+}
+.module h2 {
+  margin-bottom: 40px;
+  font-family: "Roboto Slab", serif;
+  font-size: 30px;
+}
+.module p {
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 300;
+}
+.module p:last-child {
+  margin-bottom: 0;
+}
+.module.content {
+  padding: 40px 0;
+}
+.module.parallax {
+  margin-top: 20%;
+  margin-bottom: 20%;
+  height: 600px;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.module.parallax h1 {
+  margin-left: -1500px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 48px;
+  line-height: 600px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: all 2s;
+  -o-transition: all 2s;
+  -moz-transition: all 2s;
+  -webkit-transition: all 2s;
+
+}
+.module.parallax-1 {
+  background-image: url("./../img/fa.jpg");
+}
+.module.parallax-2 {
+  background-image: url("./../img/hev.jpg");
+}
+.module.parallax-3 {
+  background-image: url("./../img/hid.jpg");
+}
+
+@media all and (min-width: 600px) {
+  .module h2 {
+    font-size: 42px;
+  }
+  .module p {
+    font-size: 20px;
+  }
+  .module.parallax h1 {
+    font-size: 96px;
+  }
+}
+@media all and (min-width: 960px) {
+  .module.parallax h1 {
+    font-size: 160px;
+  }
+}
