@@ -43,13 +43,13 @@ h1{
   margin-top: 20%;
   margin-bottom: 20%;
   height: 600px;
-  background-position: 50% 0;
+  background-position: 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 .module.parallax h1 {
   margin-left: -1500px;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(200, 200, 255, 0.8);
   font-size: 48px;
   line-height: 600px;
   font-weight: 700;

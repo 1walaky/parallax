@@ -32,13 +32,13 @@ $(function(){
         //Kell még egy szorzószám, ami a képernyő aktuális helyzetéhez igazítja
         //a háttérképet scrollozás közben (amikor a parallax elem megjelenik, 
         //a háttérnek az elem alján kell lennie, amikor eltűnik, akkor az elem tetején)
-        var screenX = $window.scrollTop();
         var $para_el = $(this);
-        var para_el_top = $para_el.position().top;
-        var para_el_height = $para_el.outerHeight();
+        var para_el_top = $para_el.offset().top;
+        var para_el_height = $para_el.innerHeight();
         var para_el_bottom = para_el_top + para_el_height;
-        var bgYPos = Math.abs((screenX - para_el_bottom) / (window_height + para_el_height));
-
+        var screenX = $window.scrollTop();
+        var bgYPos = (screenX - para_el_bottom) / (window_height + para_el_height);
+        bgYPos = 1 - Math.abs(bgYPos);
         var bg_image_url = $para_el.css('background-image');
         var bg_image_regex = /"([^"]*)"/;
         var img_url = bg_image_regex.exec(bg_image_url)[1];
